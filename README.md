@@ -4,9 +4,9 @@ Repositori ini berisi implementasi simulasi komputasional untuk memodelkan kinet
 
 ## Deskripsi Proyek
 Model ini menggunakan sistem **Ordinary Differential Equations (ODE)** untuk memetakan perubahan molaritas molekul $H^+$, $HCO_3^-$, dan $H_2CO_3$ secara kontinu. Simulasi ini bertujuan untuk:
-1. **Memetakan trajektori** penurunan pH darah di bawah infusi asam laktat konstan.
-2. **Menganalisis korelasi** antara degradasi kapasitas *buffer* dengan titik kritis (*tipping point*) kegagalan sistem.
-3. **Melakukan optimasi** terhadap kombinasi intervensi terapeutik berupa injeksi $NaHCO_3$ untuk menemukan jendela waktu dan dosis injeksi yang paling efektif dalam memperpanjang waktu ketahanan fisiologis.
+1. **Pemetaan sistem fisiologis**: mensimulasikan dan memvisualisasikan dinamikan penurunan tingkat pH darah secara _real-time_ di bawah pengaruh laju infusi asam laktat secara konstan.
+2. **Analisi _tipping point_**: Mengevaluasi kurva trajektori pH dalam kegagalan sistem terhadap  degradasi kapasitas *buffer*
+3. **Optimasi intervensi injeksi**: Mengimplementasikan penggunaan algoritma pencarian akar (_root finding_) menggunakan metode Brent (_Brent's Method_) untuk menentukan takaran dosis injeksi $NaHCO_3$ ke dalam sistem secara otomatis dengan presisi tinggi. Optimasi ini memastikan pemulihan sistem dengan baik di bawah ancaman komplikasi medis berdasarkan batas toleransi tubuh manusia.
 
 ## Struktur Repositori
 - `simulasi.ipynb`: Jupyter Notebook utama yang berisi seluruh kode simulasi dan visualisasi hasil eksperimen.
